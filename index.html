@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/b68163b53e.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Portfolio-1.jpg" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>
+            Hi! I'm <span>Utkarsh</span>,<br />a passionate programmer<br />and
+            a MERN Stack Developer.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------about---------------------------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/about me image.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="bro">
+              Hello! i'm Utkarsh Sharma a mern stack developer and a passionate
+              programmer, I am currently pursuing my B.Tech from Noida Institute
+              of Engineering and Technology (NIET). With a strong foundation in
+              web development and an eagerness to explore new horizons, I am
+              constantly honing my skills to create innovative and efficient
+              solutions.<br /><br />
+              I firmly believe in the power of collaboration and continuous
+              learning, as they are the keys to staying ahead in this
+              ever-evolving industry. I am excited to be a part of this
+              community and look forward to engaging in insightful discussions
+              and contributing my expertise.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('personal insight')">
+                Personal Insight
+              </p>
+            </div>
+            <div class="tab-contents active-tab" ,id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />I am a Web Developer<br />and
+                  I thrive on creating engaging<br />and functional online
+                  experiences<br />that leave a lasting impact.
+                </li>
+                <li>
+                  <span>Programming</span><br />I am driven by curiosity<br />and
+                  a love for problem-solving,<br />constantly seeking innovative
+                  solutions<br />to complex challenges.<br />
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="ducation">
+              <ul>
+                <li>
+                  <span>2020-Current</span><br />B.tech from Noida Institute of
+                  Engineering and Technology(NIET).
+                </li>
+                <li>
+                  <span>2018-2020</span><br />Higher secondary education from
+                  Milton Public School.(CBSE)
+                </li>
+                <li>
+                  <span>2006-2018</span><br />Secondary education from
+                  St.Peter's College.(ICSE)
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="personal insight">
+              <ul>
+                <li>
+                  <span>Hobbies</span><br />
+                  I have a diverse range of hobbies<br />that keep me energized
+                  and inspired,<br />whether it's exploring the great
+                  outdoors,<br />diving into a captivating book,<br />experimenting
+                  with new recipes in the kitchen.
+                </li>
+                <li>
+                  <span>Sports</span><br />I am a state level Football
+                  Player,<br />apart from football i have learned
+                  taekwondo,skatting,swimming in my school life.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--------------------------------------Services---------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-regular fa-file-code fa-shake"></i>
+                <h2 class="service-head">Web Development</h2>
+                <p>With expertise in HTML, CSS, JavaScript,<br>and proficiency in popular frameworks like React.js and Node.js,<br>I possess a robust skill set in web development,<br>ensuring the creation of visually stunning,<br>user-friendly, and high-performance websites.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-terminal fa-shake"></i>
+                <h2 class="service-head">Programming</h2>
+                <p>With a strong foundation in DSA concepts<br>and extensive experience in implementing optimized algorithms,<br>I strive to tackle complex challenges<br>with elegance and precision.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------------Projects--------------------------------------->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+
+
+
+    </div>
+
+
+
+
+
+</div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");  
+            document.getElementById(tabname).classList.add("active-tab");     
+        }
+
+
+
+    </script>
+</body>
+</html>
